@@ -12,7 +12,6 @@ function walk(node)
 		case 1:  // Element
 		case 9:  // Document
 		case 11: // Document fragment
-            console.log(node.nodeName);
             if (node.nodeName != 'TEXTAREA')
                 child = node.firstChild;
             else
