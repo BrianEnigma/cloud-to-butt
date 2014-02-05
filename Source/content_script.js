@@ -12,7 +12,11 @@ function walk(node)
 		case 1:  // Element
 		case 9:  // Document
 		case 11: // Document fragment
-			child = node.firstChild;
+            console.log(node.nodeName);
+            if (node.nodeName != 'TEXTAREA')
+                child = node.firstChild;
+            else
+                child = null;
 			while ( child ) 
 			{
 				next = child.nextSibling;
