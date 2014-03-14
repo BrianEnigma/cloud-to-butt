@@ -41,9 +41,15 @@ function handleText(textNode)
 	v = v.replace(/\bbitcoin\b/g, "buttcoin");
 	v = v.replace(/\bBitcoin\b/g, "Buttcoin");
 	v = v.replace(/\bBitCoin\b/g, "ButtCoin");
-        v = v.replace(/\bdogecoin\b/g, "dogebutt");
-        v = v.replace(/\bDogecoin\b/g, "Dogebutt");
-        v = v.replace(/\bDogeCoin\b/g, "DogeButt");
+	v = v.replace(/\bbitcoins\b/g, "buttcoins");
+	v = v.replace(/\bBitcoins\b/g, "Buttcoins");
+	v = v.replace(/\bBitCoins\b/g, "ButtCoins");
+    v = v.replace(/\bdogecoin\b/g, "dogebutt");
+    v = v.replace(/\bDogecoin\b/g, "Dogebutt");
+    v = v.replace(/\bDogeCoin\b/g, "DogeButt");
+    v = v.replace(/\bdogecoins\b/g, "dogebutts");
+    v = v.replace(/\bDogecoins\b/g, "Dogebutts");
+    v = v.replace(/\bDogeCoins\b/g, "DogeButts");
 	
 	textNode.nodeValue = v;
 }
